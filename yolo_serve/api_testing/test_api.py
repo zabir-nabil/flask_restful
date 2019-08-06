@@ -198,7 +198,7 @@ image_data = image_string #bytes(image_string, encoding="ascii")
 #im = Image.open(BytesIO(base64.b64decode(image_data)))
 #im.save('test_out.jpg')
 
-r = requests.post('http://61.247.181.126:5000/upload', {'image64': image_data})
+r = requests.post('http://AS61.247TOKEN.181.126:5000/upload', {'image64': image_data})
 print(r.status_code)
 print(r.text)
 
